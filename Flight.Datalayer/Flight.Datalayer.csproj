@@ -9,14 +9,10 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Flight.db" />
-      <Content Include="Flight.db">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <None Remove="Flight.sqlite" />
+      <Content Include="Flight.sqlite">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Infrastructure" />
     </ItemGroup>
 
 </Project>

@@ -33,5 +33,30 @@ namespace Flight.DataLayer.Repositories
             return pagedResult;
         
         }
+
+        public PagedResult<ProductDetailDto> SearchCategoryIncluded(SearchModel<Product> searchModel)
+        {
+            var query = searchModel.Where != null ? Table.Where(searchModel.Where) : Table;
+            query.Include(x => x.Category);
+            
+            if(searchModel.OrderBy!=null)
+                query = searchModel.IsDescending 
+                    ? query.OrderByDescending(searchModel.OrderBy) 
+                    : query.OrderBy(searchModel.OrderBy);
+
+            var pagedResult = new PagedResult<ProductDetailDto>
+            {
+                CurrentPage = searchModel.CurrentPage, PageSize = searchModel.PageSize, RowCount = query.Count()
+            };
+
+            var pageCount = (double)pagedResult.RowCount / searchModel.PageSize;
+            pagedResult.PageCount = (int)Math.Ceiling(pageCount);
+
+            var skip = (searchModel.CurrentPage - 1) * searchModel.PageSize;
+            
+            pagedResult.Result = query.Skip(skip).Take(searchModel.PageSize).Select(ProductDetailDto.Projection).ToList();
+
+            return pagedResult;
+        }
     }
 }

@@ -8,4 +8,12 @@
       <ProjectReference Include="..\Flight.Datalayer\Flight.Datalayer.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="Flight.db" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Flight.sqlite" />
+    </ItemGroup>
+
 </Project>

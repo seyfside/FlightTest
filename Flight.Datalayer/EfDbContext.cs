@@ -6,10 +6,12 @@ namespace Flight.DataLayer
     public class EfDbContext:DbContext
     {
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Filename=Flight.db");
+            optionsBuilder.UseSqlite("Filename=Flight.sqlite");
             base.OnConfiguring(optionsBuilder);
         }
 
@@ -17,6 +19,7 @@ namespace Flight.DataLayer
         {
             modelBuilder.ApplyConfiguration(new CustomerConfiguration());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
             
             base.OnModelCreating(modelBuilder);
         }

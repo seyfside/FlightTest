@@ -11,6 +11,7 @@ namespace Flight.DataLayer.Entities
             builder.Property(c => c.Title);
             builder.Property(c => c.Price);
             builder.Property(c => c.ImageUrl);
+            builder.HasOne(x => x.Category);
         }
     }
 }
