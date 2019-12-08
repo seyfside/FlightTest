@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Datalayer", "Flight.Datalayer\Flight.Datalayer.csproj", "{91E82F3D-B39E-40FE-A1E5-F3381000F38A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Businesslayer", "Flight.Businesslayer\Flight.Businesslayer.csproj", "{C3E7D25D-5886-4AEA-890A-A6FB0FCDC312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.API", "Flight.API\Flight.API.csproj", "{3601A19B-2D6F-4E2D-A0E5-39F758C5DAD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91E82F3D-B39E-40FE-A1E5-F3381000F38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91E82F3D-B39E-40FE-A1E5-F3381000F38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91E82F3D-B39E-40FE-A1E5-F3381000F38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91E82F3D-B39E-40FE-A1E5-F3381000F38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E7D25D-5886-4AEA-890A-A6FB0FCDC312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E7D25D-5886-4AEA-890A-A6FB0FCDC312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E7D25D-5886-4AEA-890A-A6FB0FCDC312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E7D25D-5886-4AEA-890A-A6FB0FCDC312}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3601A19B-2D6F-4E2D-A0E5-39F758C5DAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3601A19B-2D6F-4E2D-A0E5-39F758C5DAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3601A19B-2D6F-4E2D-A0E5-39F758C5DAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3601A19B-2D6F-4E2D-A0E5-39F758C5DAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
