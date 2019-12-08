@@ -40,15 +40,19 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Dto" t="Include">
           <e p="CustomerDto.cs" t="Include" />
+          <e p="ProductDto.cs" t="Include" />
         </e>
         <e p="EfDbContext.cs" t="Include" />
         <e p="Entities" t="Include">
           <e p="Customer.cs" t="Include" />
           <e p="CustomerConfiguration.cs" t="Include" />
           <e p="IEntity.cs" t="Include" />
+          <e p="Product.cs" t="Include" />
+          <e p="ProductConfiguration.cs" t="Include" />
         </e>
         <e p="Flight.Datalayer.csproj" t="IncludeRecursive" />
         <e p="Flight.db" t="Include" />
+        <e p="Infrastructure" t="Include" />
         <e p="IUnitOfWork.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -64,6 +68,8 @@
           <e p="GenericRepository.cs" t="Include" />
           <e p="ICustomerRepository.cs" t="Include" />
           <e p="IGenericRepository.cs" t="Include" />
+          <e p="IProductRepository.cs" t="Include" />
+          <e p="ProductRepository.cs" t="Include" />
         </e>
         <e p="SearchModel.cs" t="Include" />
         <e p="UnitOfWork.cs" t="Include" />

@@ -16,6 +16,7 @@ namespace Flight.DataLayer
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CustomerConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
             
             base.OnModelCreating(modelBuilder);
         }
