@@ -14,7 +14,7 @@ namespace Flight.DataLayer.Repositories
             _table = unitOfWork.Context.Set<T>();
         }
 
-        public IQueryable<T> Table => _table.AsNoTracking();
+        protected IQueryable<T> Table => _table.AsNoTracking();
 
         public T GetById(Guid id)
         {
